@@ -1,0 +1,113 @@
+.about {
+    width: 100%;
+    height: calc(100% - 70px);
+    position: relative;
+
+        .about-title {
+            font-size: 3.3rem;
+            padding: 6rem 0 6rem 0;
+        }
+
+        .col-2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: center;
+            flex-wrap: wrap;
+
+                div {
+                    border: 2px solid rgba(105, 105, 105, 0.514);
+                    padding: 1rem;
+                    border-radius: 10px;
+                    margin: 0 2rem;
+                    width: 39%;
+
+                        h1 {
+                            font-size: 1.5rem;
+                            padding-bottom: 1.3rem; 
+                            color: var(--primary-color);
+                        }
+
+                        p {
+                            font-size: .9rem;
+                            font-weight: 400;
+                            line-height: 1.7rem;
+                        }
+                }
+        }
+
+        .img-3 {
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+            gap: 20px;
+            margin-top: 7rem;
+            justify-content: center;
+            align-items: center;
+
+            img.consultation {
+                width: 300px;
+            }
+
+            img.middle {
+                height: 700px;
+                width: 350px;
+            }
+        }
+
+        .arrow-vec {
+            width: 90px;
+        }
+
+        .learn-more {
+            text-align: center;
+            margin: 2rem 0;
+            
+            .btn {
+                padding: 1.3rem 3rem;
+            }
+        }
+}
+
+@media screen and (max-width: 920px) {
+  .about {
+      width: 100%;
+      z-index: 10;
+
+      .about-title {
+        font-size: 2rem;
+        padding: 5rem 0 5rem 0;
+        }
+
+        .col-2 {
+            width: 100%;
+            margin-top: -3rem;
+        }
+
+        .col-2 div {
+        width: 100%;
+        margin: 15px 0;
+        padding: 1rem;
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+        }
+
+        .img-3 {
+            width: 100%;
+            grid-template-columns: 1fr;
+            text-align: center;
+
+            .arrow-vec {
+                transform: rotate(90deg);
+                text-align: center;
+                margin: 20px 35% ;
+            }
+        }
+
+
+      
+       
+  }
+}

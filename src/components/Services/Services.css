@@ -1,0 +1,135 @@
+.services {
+  width: 100%;
+  height: calc(100% - 70px);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10rem;
+}
+
+.services::before {
+  content: '';
+  position: absolute;
+  top: -230px;
+  right: 0;
+  width: 300px;
+  height: 500px;
+  background-image: url(../../assets/Vector8.svg);
+  background-repeat: no-repeat;
+  text-align: right;
+}
+
+.services section.wrapper {
+  padding: 0 8rem;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+article {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-right: 17rem;
+}
+
+.right-flex {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 380px;
+  height: 700px;
+}
+
+.right-flex img.mobile {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+img {
+  width: 100%;
+}
+
+.services-title {
+  font-size: 3rem;
+  margin: 4rem 0;
+}
+
+.item-text {
+  font-size: 1.5rem;
+  padding: 3rem 0 2rem 0;
+}
+
+.item div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 3px solid #e9ebeb;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.item div:hover {
+  border-bottom: 3px solid var(--primary-color);
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.item p {
+  padding-top: 1rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 940px) {
+  .services::before {
+    display: none;
+  }
+  .services-title {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .services section.wrapper {
+    padding: 0 1rem;
+    width: 100%;
+    margin-top: -180px;
+  }
+  .flex-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  article {
+    padding-right: 0;
+  }
+  .right-flex {
+    margin-top: 2rem;
+  }
+}
+/*# sourceMappingURL=Services.css.map */

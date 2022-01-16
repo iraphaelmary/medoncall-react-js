@@ -1,0 +1,87 @@
+.blog {
+  width: 100%;
+  height: calc(100vh - 70px);
+  position: relative;
+  margin-top: 25rem;
+  z-index: 6;
+}
+
+.blog section {
+  width: 100%;
+  height: 100%;
+}
+
+.blog section img {
+  width: 100%;
+}
+
+.blog section .blog-title {
+  padding: 0 28rem 5rem 0;
+  font-size: 3rem;
+  line-height: 6rem;
+  text-align: left;
+}
+
+.log-4 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  gap: 0;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 60px;
+  position: relative;
+}
+
+.log-4 h1 {
+  position: absolute;
+  top: 0;
+  left: 15rem;
+  z-index: 12;
+  margin: 0 3rem;
+}
+
+.log-4 .b .vaccine {
+  position: absolute;
+  top: 220px;
+  left: 15rem;
+  z-index: 12;
+  font-size: 3rem;
+  color: white;
+}
+
+.log-4 .b .break {
+  position: absolute;
+  top: 150px;
+  left: 33rem;
+  z-index: 12;
+  font-size: 3rem;
+  color: white;
+}
+
+.log-4 .b .research {
+  position: absolute;
+  top: 220px;
+  left: 50rem;
+  z-index: 12;
+  font-size: 3rem;
+  color: white;
+}
+
+.log-4 .b img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+@media screen and (max-width: 940px) {
+  .blog {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Blog.css.map */

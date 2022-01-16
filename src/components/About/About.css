@@ -1,0 +1,120 @@
+.about {
+  width: 100%;
+  height: calc(100% - 70px);
+  position: relative;
+}
+
+.about .about-title {
+  font-size: 3.3rem;
+  padding: 6rem 0 6rem 0;
+}
+
+.about .col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about .col-2 div {
+  border: 2px solid rgba(105, 105, 105, 0.514);
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0 2rem;
+  width: 39%;
+}
+
+.about .col-2 div h1 {
+  font-size: 1.5rem;
+  padding-bottom: 1.3rem;
+  color: var(--primary-color);
+}
+
+.about .col-2 div p {
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+
+.about .img-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+  gap: 20px;
+  margin-top: 7rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .img-3 img.consultation {
+  width: 300px;
+}
+
+.about .img-3 img.middle {
+  height: 700px;
+  width: 350px;
+}
+
+.about .arrow-vec {
+  width: 90px;
+}
+
+.about .learn-more {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.about .learn-more .btn {
+  padding: 1.3rem 3rem;
+}
+
+@media screen and (max-width: 920px) {
+  .about {
+    width: 100%;
+    z-index: 10;
+  }
+  .about .about-title {
+    font-size: 2rem;
+    padding: 5rem 0 5rem 0;
+  }
+  .about .col-2 {
+    width: 100%;
+    margin-top: -3rem;
+  }
+  .about .col-2 div {
+    width: 100%;
+    margin: 15px 0;
+    padding: 1rem;
+  }
+  .about .col-2 div h1 {
+    font-size: 1.5rem;
+  }
+  .about .img-3 {
+    width: 100%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .about .img-3 .arrow-vec {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    text-align: center;
+    margin: 20px 35%;
+  }
+}
+/*# sourceMappingURL=About.css.map */
